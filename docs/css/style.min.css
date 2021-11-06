@@ -338,11 +338,25 @@ body._lock {
   justify-content: center;
 }
 .row-center__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   max-width: 550px;
   margin-top: 22px;
+}
+.row-center__wrapper::before {
+  content: "";
+  position: absolute;
+  top: -21px;
+  right: -24px;
+  border-style: solid;
+  border-width: 0 508px 508px 0;
+  border-color: transparent #f07f18 transparent transparent;
+}
+.row-center__content {
+  position: relative;
+  z-index: 2;
 }
 .row-center__title {
   margin-bottom: 30px;

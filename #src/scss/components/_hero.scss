@@ -61,12 +61,29 @@
 	// .row-center__wrapper
 
 	&__wrapper {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 		max-width: 550px;
 		margin-top: 22px;
-		// margin-right: 215px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: -21px;
+			right: -24px;
+			border-style: solid;
+			border-width: 0 508px 508px 0;
+			border-color: transparent #f07f18 transparent transparent;
+		}
+	}
+
+	// .row-center__content
+
+	&__content {
+		position: relative;
+		z-index: 2;
 	}
 
 	// .row-center__title
