@@ -1,0 +1,59 @@
+.benefits {
+	padding-top: 20px;
+	padding-bottom: 60px;
+	background: var(--color-main);
+
+	// .benefits__container
+
+	&__container {
+	}
+
+	// .benefits__title
+
+	&__title {
+		margin-bottom: 70px;
+	}
+
+	// .benefits__content
+
+	&__content {
+		display: grid;
+		grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+		justify-items: stretch;
+		gap: 20px;
+		padding-bottom: 63px;
+	}
+
+	// .benefits__block
+
+	&__block {
+	}
+}
+
+.benefits-block {
+	display: flex;
+	margin-bottom: 30px;
+
+	// .benefits-block__logo
+
+	&__logo {
+		margin-right: 30px;
+	}
+
+	// .benefits-block__text
+
+	&__text {
+		width: 292px;
+	}
+}
+.block-text {
+	// .block-text__title
+
+	&__title {
+		margin-bottom: 15px;
+	}
+	// . block-text__descr
+
+	&__descr {
+	}
+}
