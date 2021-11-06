@@ -1,8 +1,8 @@
 .hero {
 	padding-top: 176px;
-	padding-bottom: 100px;
+	padding-bottom: 10px;
 	background: url('../img/hero-bg.jpg') center / cover no-repeat;
-	min-height: 800px;
+	// min-height: 800px;
 
 	// .hero__container
 
@@ -90,11 +90,7 @@
 
 	&__title {
 		margin-bottom: 30px;
-		font-family: 'Playfair';
-		font-size: 48px;
-		text-transform: uppercase;
 		text-align: right;
-		line-height: 140%;
 	}
 
 	// .row-center__descr

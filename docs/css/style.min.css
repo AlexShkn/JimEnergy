@@ -307,9 +307,8 @@ body._lock {
 */
 .hero {
   padding-top: 176px;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   background: url("../img/hero-bg.jpg") center/cover no-repeat;
-  min-height: 800px;
 }
 .hero__rows {
   display: flex;
@@ -360,11 +359,7 @@ body._lock {
 }
 .row-center__title {
   margin-bottom: 30px;
-  font-family: "Playfair";
-  font-size: 48px;
-  text-transform: uppercase;
   text-align: right;
-  line-height: 140%;
 }
 .row-center__descr {
   margin-bottom: 80px;
@@ -405,6 +400,45 @@ body._lock {
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
+}
+
+.about {
+  padding-top: 99px;
+  padding-bottom: 116px;
+  background: var(--color-main);
+}
+.about__title {
+  margin-bottom: 67px;
+}
+.about-block {
+  display: flex;
+}
+.about-block__text {
+  padding-top: 45px;
+  margin-right: 11px;
+  width: 598px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+}
+.about-block__text p:first-child {
+  margin-bottom: 33px;
+}
+.about-block__image {
+  position: relative;
+}
+.about-block__image img {
+  position: relative;
+  z-index: 2;
+}
+.about-block__image::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  right: -20px;
+  width: 550px;
+  height: 521px;
+  background: #f07f18;
 }
 
 .btn {
@@ -756,6 +790,13 @@ textarea.input {
   font-size: 12px;
   width: 100%;
   text-align: center;
+}
+
+.title {
+  font-family: "Playfair";
+  font-size: 48px;
+  line-height: 140%;
+  text-transform: uppercase;
 }
 
 .row:after {
