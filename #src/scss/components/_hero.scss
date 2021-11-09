@@ -4,11 +4,6 @@
 	background: url('../img/hero-bg.jpg') center / cover no-repeat;
 	// min-height: 800px;
 
-	// .hero__container
-
-	&__container {
-	}
-
 	// .hero__rows
 
 	&__rows {
@@ -19,20 +14,6 @@
 
 .hero-row {
 	flex: 1 1 100%;
-	// .hero-row__right
-
-	&__right {
-	}
-
-	// .hero-row__center
-
-	&__center {
-	}
-
-	// .hero-row__left
-
-	&__left {
-	}
 }
 .row-right {
 	display: flex;
@@ -89,7 +70,7 @@
 	// .row-center__title
 
 	&__title {
-		margin-bottom: 30px;
+		margin-bottom: 26px;
 		text-align: right;
 	}
 
@@ -109,25 +90,14 @@
 	&__button {
 		text-align: right;
 	}
-
-	// .row-center__btn
-
-	&__btn {
-	}
-}
-.btn {
-	// .btn__arrow-right
-
-	&__arrow-right {
-	}
 }
 .row-left {
 	// .row-left__wrapper
 
 	&__wrapper {
 		position: relative;
-		left: 0;
-		top: -90px;
+		left: -3px;
+		top: -91px;
 	}
 
 	// .row-left__text
@@ -144,7 +114,7 @@
 		&::before {
 			content: '';
 			position: absolute;
-			bottom: -31px;
+			bottom: -32px;
 			left: 0;
 			width: 310px;
 			height: 11px;

@@ -1,0 +1,258 @@
+.stages {
+	padding-bottom: 113px;
+	background: var(--color-main);
+	// .stages__container
+
+	&__container {
+	}
+
+	// .stages__title
+
+	&__title {
+		margin-bottom: 90px;
+	}
+
+	// .stages__content-wrapper
+
+	&__content-wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 5px;
+	}
+
+	// .stages__steps
+
+	&__steps {
+	}
+
+	// .stages__number-wrapper
+
+	&__number-wrapper {
+		display: flex;
+	}
+
+	// .stages__number
+
+	&__number {
+		position: relative;
+		flex: 0 1 33.333%;
+		font-family: 'Playfair';
+		font-weight: 400;
+		font-size: 46px;
+		line-height: 150%;
+	}
+}
+
+.step-block {
+	position: relative;
+	padding-left: 72px;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		top: 52px;
+		left: 24px;
+		background-color: #fff;
+		transform: rotate(135deg);
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		bottom: -5px;
+		left: 24px;
+		background-color: #fff;
+		transform: rotate(135deg);
+	}
+	svg {
+		content: '';
+		position: absolute;
+		top: -20px;
+		left: 0;
+		width: 70px;
+		height: 70px;
+	}
+
+	// .step-block__title
+
+	&__title {
+		position: relative;
+		margin-bottom: 20px;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 150%;
+	}
+
+	// .step-block__descr
+
+	&__descr {
+		position: relative;
+		width: 218px;
+		font-weight: 500;
+		line-height: 150%;
+		&::before {
+			content: '';
+			position: absolute;
+			left: -46px;
+			top: 8px;
+			width: 2px;
+			height: 63px;
+			background-color: #fff;
+		}
+	}
+}
+//========Number============
+.stages__number:nth-child(1) {
+	padding-left: 20px;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		top: 36px;
+		left: -3px;
+		background-color: #fff;
+		transform: rotate(135deg);
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		top: 36px;
+		left: 51px;
+		background-color: #fff;
+		transform: rotate(135deg);
+	}
+	span {
+		&::before {
+			content: '';
+			position: absolute;
+			top: 38px;
+			right: 301px;
+			height: 2px;
+			width: 500px;
+			background-color: #fff;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 38px;
+			right: -1px;
+			height: 2px;
+			// width: 246px;
+			@include adaptiv-value('width', 246, 20, 1);
+			background-color: #fff;
+		}
+	}
+}
+.stages__number:nth-child(2) {
+	padding-left: 20px;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		top: 36px;
+		left: 2px;
+		background-color: #fff;
+		transform: rotate(135deg);
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		top: 36px;
+		left: 57px;
+		background-color: #fff;
+		transform: rotate(135deg);
+	}
+	span {
+		&::after {
+			content: '';
+			position: absolute;
+			top: 38px;
+			// right: 286px;
+			right: -10px;
+			height: 2px;
+			// width: 250px;
+			@include adaptiv-value('width', 254, 20, 1);
+			background-color: #fff;
+		}
+	}
+}
+.stages__number:nth-child(3) {
+	padding-left: 28px;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		top: 36px;
+		left: 8px;
+		background-color: #fff;
+		transform: rotate(135deg);
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		top: 36px;
+		left: 63px;
+		background-color: #fff;
+		transform: rotate(135deg);
+	}
+	span {
+		&::after {
+			content: '';
+			position: absolute;
+			top: 38px;
+			right: -12px;
+			height: 2px;
+			@include adaptiv-value('width', 250, 20, 1);
+			background-color: #fff;
+		}
+	}
+}
+.stages__number:nth-child(4) {
+	padding-left: 28px;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		top: 36px;
+		left: 11px;
+		background-color: #fff;
+		transform: rotate(135deg);
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		top: 36px;
+		left: 66px;
+		background-color: #fff;
+		transform: rotate(135deg);
+	}
+	span {
+		&::after {
+			content: '';
+			position: absolute;
+			top: 38px;
+			left: 68px;
+			height: 2px;
+			width: 635px;
+			background-color: #fff;
+		}
+	}
+}
+
+//===========Decorate-line============
