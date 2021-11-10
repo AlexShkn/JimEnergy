@@ -144,7 +144,6 @@
 			top: 38px;
 			right: -1px;
 			height: 2px;
-			// width: 246px;
 			@include adaptiv-value('width', 246, 20, 1);
 			background-color: #fff;
 		}
@@ -254,5 +253,3 @@
 		}
 	}
 }
-
-//===========Decorate-line============

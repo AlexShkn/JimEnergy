@@ -1,6 +1,6 @@
 .benefits {
 	padding-top: 20px;
-	padding-bottom: 142px;
+	@include adaptiv-value('padding-bottom', 136, 50, 1);
 	background: var(--color-main);
 
 	// .benefits__container
@@ -23,6 +23,7 @@
 		grid-template-columns: repeat(auto-fill, minmax(392px, 1fr));
 		grid-column-gap: 20px;
 		grid-row-gap: 50px;
+		margin-bottom: 52px;
 		@media (max-width: 840px) {
 			grid-row-gap: 30px;
 		}
@@ -39,7 +40,6 @@
 
 .benefits-block {
 	display: flex;
-	margin-bottom: 30px;
 
 	// .benefits-block__logo
 

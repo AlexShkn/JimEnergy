@@ -25,13 +25,20 @@
 	color: var(--color-white);
 	transition: all 0.3s ease 0s;
 	white-space: nowrap;
+	@media (max-width: 1160px) {
+		font-size: 14px;
+	}
 	@media (any-hover: hover) {
 		&:hover {
 			background-color: #273947;
 		}
 	}
-	@media (max-width: 1160px) {
-		font-size: 14px;
+	&_gray-blue {
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #516c81;
+			}
+		}
 	}
 	&__arrow-right {
 		position: relative;
@@ -54,6 +61,7 @@
 		position: relative;
 		padding: 18px 30px;
 		height: 55px;
+
 		span {
 			padding-right: 50px;
 			&::after {

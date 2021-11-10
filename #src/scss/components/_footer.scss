@@ -113,6 +113,7 @@
 	&__address {
 		padding-left: 36px;
 		margin-bottom: 15px;
+		// white-space: nowrap;
 		background: url('../img/icons/locate.svg') left top no-repeat;
 		a {
 			line-height: 25px;

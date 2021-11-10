@@ -1,5 +1,5 @@
 .partners {
-	padding-top: 101px;
+	@include adaptiv-value('padding-top', 100, 50, 1);
 	padding-bottom: 36px;
 	background-color: #fff;
 	// .partners__container
@@ -12,12 +12,18 @@
 	&__top {
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 100px;
+		@include adaptiv-value('margin-bottom', 100, 30, 1);
+		@media (max-width: 680px) {
+			flex-direction: column;
+		}
 	}
 
 	// .partners__title
 
 	&__title {
+		@media (max-width: 680px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	// .partners__descr
@@ -29,6 +35,9 @@
 		font-size: 20px;
 		line-height: 150%;
 		color: var(--color-main);
+		@media (max-width: 680px) {
+			text-align: left;
+		}
 	}
 
 	// .partners__body
@@ -44,9 +53,7 @@
 	// .partners__item
 
 	&__item {
-		// width: 289px;
-		padding-right: 42px;
-		padding-left: 61px;
-		margin-bottom: 95px;
+		padding: 0 42px;
+		@include adaptiv-value('margin-bottom', 95, 30, 1);
 	}
 }

@@ -59,14 +59,15 @@
 		&::after {
 			content: '';
 			position: absolute;
-			top: 19px;
-			right: -20px;
+			top: 27px;
+			right: -19px;
 			width: 550px;
 			height: 521px;
 			background: #f07f18;
 		}
 		&_reverse {
 			margin-right: 67px;
+			padding-top: 7px;
 			@media (max-width: $md2+px) {
 				margin-right: 0;
 			}

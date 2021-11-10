@@ -1,6 +1,6 @@
 .catalog {
 	background: var(--color-main);
-	padding-bottom: 102px;
+	@include adaptiv-value('padding-bottom', 102, 50, 1);
 
 	// .catalog__container
 
@@ -10,15 +10,19 @@
 	// .catalog__title
 
 	&__title {
-		margin-bottom: 100px;
+		@include adaptiv-value('margin-bottom', 100, 40, 1);
 	}
 
 	// .catalog__block
 
 	&__block {
+		// display: grid;
+		// grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+		// gap: 20px;
 		display: grid;
-		grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+		grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
 		gap: 20px;
+		justify-items: stretch;
 	}
 
 	// .catalog__item
