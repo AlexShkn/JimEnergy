@@ -20,17 +20,23 @@
 .btn {
 	display: inline-flex;
 	padding: 14px 17px;
+	height: 45px;
 	border: 1px solid var(--color-white);
 	color: var(--color-white);
 	transition: all 0.3s ease 0s;
+	white-space: nowrap;
 	@media (any-hover: hover) {
 		&:hover {
 			background-color: #273947;
 		}
 	}
+	@media (max-width: 1160px) {
+		font-size: 14px;
+	}
 	&__arrow-right {
 		position: relative;
 		padding: 17px 30px;
+		height: 55px;
 		span {
 			padding-right: 40px;
 			&::after {
@@ -47,6 +53,7 @@
 	&__arrow-down {
 		position: relative;
 		padding: 18px 30px;
+		height: 55px;
 		span {
 			padding-right: 50px;
 			&::after {
