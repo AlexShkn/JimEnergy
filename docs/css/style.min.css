@@ -363,6 +363,11 @@ body._lock {
   padding-bottom: 10px;
   background: url("../img/hero-bg.jpg") center/cover no-repeat;
 }
+@media (max-width: 1247px) {
+  .hero {
+    padding-top: calc(100px + 76 * ((100vw - 320px) / 927));
+  }
+}
 .hero__rows {
   display: flex;
   flex-direction: column;
@@ -377,6 +382,11 @@ body._lock {
   justify-content: flex-end;
   margin-bottom: 75px;
 }
+@media (max-width: 620px) {
+  .row-right {
+    margin-bottom: 30px;
+  }
+}
 .row-right__text {
   max-width: 390px;
   text-align: right;
@@ -384,6 +394,16 @@ body._lock {
   font-size: 20px;
   line-height: 150%;
   text-transform: uppercase;
+}
+@media (max-width: 620px) {
+  .row-right__text {
+    font-size: 17px;
+  }
+}
+@media (max-width: 375px) {
+  .row-right__text {
+    font-size: 15px;
+  }
 }
 
 .row-center {
@@ -414,6 +434,25 @@ body._lock {
 .row-center__title {
   margin-bottom: 26px;
   text-align: right;
+  font-family: "Playfair";
+  font-size: 48px;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+@media (max-width: 620px) {
+  .row-center__title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 479.98px) {
+  .row-center__title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 479.98px) and (max-width: 1247px) {
+  .row-center__title {
+    font-size: calc(25px + 10 * ((100vw - 320px) / 927));
+  }
 }
 .row-center__descr {
   margin-bottom: 80px;
@@ -423,14 +462,35 @@ body._lock {
   font-size: 20px;
   line-height: 150%;
 }
+@media (max-width: 620px) {
+  .row-center__descr {
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 479.98px) {
+  .row-center__descr {
+    font-size: 16px;
+  }
+}
 .row-center__button {
   text-align: right;
+}
+@media (max-width: 479.98px) {
+  .row-center__button {
+    margin-bottom: 20px;
+  }
 }
 
 .row-left__wrapper {
   position: relative;
   left: -3px;
   top: -91px;
+}
+@media (max-width: 620px) {
+  .row-left__wrapper {
+    top: -10px;
+  }
 }
 .row-left__text {
   position: relative;
@@ -450,11 +510,26 @@ body._lock {
   height: 11px;
   background-color: #fff;
 }
+@media (max-width: 620px) {
+  .row-left__text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 479.98px) {
+  .row-left__text {
+    font-size: 16px;
+  }
+}
 .row-left__descr {
   width: 309px;
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
+}
+@media (max-width: 479.98px) {
+  .row-left__descr {
+    font-size: 12px;
+  }
 }
 
 .about {
