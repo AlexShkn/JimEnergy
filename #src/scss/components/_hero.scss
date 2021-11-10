@@ -67,6 +67,16 @@
 			border-width: 0 508px 508px 0;
 			border-color: transparent #f07f18 transparent transparent;
 		}
+		@media (max-width: 620px) {
+			&::before {
+				border-width: 0 420px 420px 0;
+			}
+		}
+		@media (max-width: $md4+px) {
+			&::before {
+				border-width: 0 300px 300px 0;
+			}
+		}
 	}
 
 	// .row-center__content

@@ -18,10 +18,17 @@
 
 	&__content {
 		display: grid;
-		grid-template: repeat(2, 1fr) / repeat(3, 1fr);
 		justify-items: stretch;
-		gap: 20px;
 		padding-bottom: 55px;
+		grid-template-columns: repeat(auto-fill, minmax(392px, 1fr));
+		grid-column-gap: 20px;
+		grid-row-gap: 50px;
+		@media (max-width: 840px) {
+			grid-row-gap: 30px;
+		}
+		@media (max-width: $md4+px) {
+			grid-row-gap: 20px;
+		}
 	}
 
 	// .benefits__block
@@ -44,6 +51,9 @@
 
 	&__text {
 		width: 292px;
+		@media (max-width: 410px) {
+			max-width: 200px;
+		}
 	}
 }
 .block-text {
