@@ -1,0 +1,137 @@
+.footer {
+	padding-top: 100px;
+	padding-bottom: 70px;
+	background-color: #516c81;
+
+	// .footer__conteiner
+
+	&__conteiner {
+	}
+
+	// .footer__body
+
+	&__body {
+		display: flex;
+		margin-bottom: 50px;
+	}
+
+	// .footer__column
+
+	&__column {
+		flex: 0 1 33.333%;
+	}
+
+	// .footer__logo
+
+	&__logo {
+		margin-bottom: 50px;
+	}
+
+	// .footer__text
+
+	&__text {
+		max-width: 270px;
+		font-weight: 500;
+		line-height: 150%;
+	}
+	// .footer__label
+
+	&__label {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: calc(24 / 20);
+	}
+
+	// .footer__studio
+
+	&__studio {
+		text-align: center;
+	}
+}
+
+.column-catalog {
+	padding-top: 4px;
+	padding-left: 49px;
+
+	// .column-catalog__label
+
+	&__label {
+		margin-bottom: 38px;
+	}
+
+	// .column-catalog__list
+
+	&__list {
+	}
+
+	// .column-catalog__link
+
+	&__link {
+		font-weight: 500;
+		line-height: 250%;
+		color: var(--color-white);
+	}
+}
+.column-contacts {
+	padding-top: 4px;
+	padding-left: 116px;
+
+	// .column-contacts__label
+
+	&__label {
+		margin-bottom: 30px;
+	}
+
+	// .column-contacts__row
+
+	&__row {
+		display: flex;
+		align-items: center;
+		margin-bottom: 33px;
+	}
+
+	// .column-contacts__phone
+
+	&__phone {
+		padding-left: 36px;
+		margin-right: 55px;
+		background: url('../img/icons/phone-call.svg') left no-repeat;
+		line-height: 25px;
+		color: #e6e6e6;
+	}
+
+	// .column-contacts__schedule
+
+	&__schedule {
+		font-size: 12px;
+		line-height: 150%;
+		text-align: right;
+	}
+
+	// .column-contacts__address
+
+	&__address {
+		padding-left: 36px;
+		margin-bottom: 15px;
+		background: url('../img/icons/locate.svg') left top no-repeat;
+		a {
+			line-height: 25px;
+			color: #e6e6e6;
+		}
+	}
+
+	// .column-contacts__whatsapp
+
+	&__whatsapp {
+		padding-left: 34px;
+		margin-bottom: 60px;
+		background: url('../img/icons/whatsapp.svg') 0 0 no-repeat;
+
+		a {
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 23px;
+			color: #ffffff;
+		}
+	}
+}
