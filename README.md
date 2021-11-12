@@ -1,1 +1,1 @@
-https://alexshkn.github.io/jimenergy/
+https://alexshkn.github.io/JimEnergy/
