@@ -842,7 +842,7 @@ body._lock {
 
 .catalog__label {
   margin-top: 50px;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 18px;
   line-height: 150%;
 }
